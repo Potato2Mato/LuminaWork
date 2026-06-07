@@ -1,0 +1,176 @@
+/* Lumina Learning Landing Page */
+/* This file is intentionally not minified for optimization practice */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0F0C9;
+  background: #F0F0C9;
+  line-height: 1.6;
+}
+
+.hero {
+  min-height: 90vh;
+  padding: 30px 60px;
+  background: linear-gradient(120deg, #001F54 0%, #1282A2 55%, #F0F0C9 100%);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 600;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.text-area {
+  width: 55%;
+}
+
+.label {
+  background: rgba(255, 255, 255, 0.18);
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 68px;
+  line-height: 1.05;
+  margin: 20px 0;
+}
+
+.subtitle {
+  font-size: 22px;
+  max-width: 650px;
+  margin-bottom: 35px;
+}
+
+.cta {
+  background: #FEEB7F;
+  color: #001F54;
+  padding: 15px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.image-area {
+  width: 45%;
+}
+
+.image-area img {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+.features {
+  padding: 70px 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  background: white;
+}
+
+.feature-card {
+  background: #F7F9FC;
+  padding: 35px;
+  border-radius: 18px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+}
+
+.feature-card img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  color: #001F54;
+  font-size: 24px;
+}
+
+.details {
+  padding: 80px 60px;
+  text-align: center;
+  background: #F0F0C9;
+}
+
+.details h2 {
+  font-size: 42px;
+  color: #001F54;
+}
+
+.details p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: 19px;
+}
+
+button {
+  background: #1282A2;
+  color: white;
+  border: none;
+  padding: 14px 26px;
+  font-size: 17px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #001F54;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 25px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .text-area,
+  .image-area {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 46px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    padding: 40px 25px;
+  }
+}
